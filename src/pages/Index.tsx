@@ -256,6 +256,123 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 py-12">
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-2">Живые дилеры</h2>
+            <p className="text-muted-foreground">Играйте с настоящими крупье в режиме реального времени</p>
+          </div>
+          <Badge className="bg-red-600 text-white px-4 py-2 text-sm flex items-center gap-2">
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+            LIVE
+          </Badge>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Card className="group relative bg-card border-white/10 overflow-hidden cursor-pointer hover:border-primary transition-all duration-300">
+            <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-red-900/30 to-black">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <Icon name="CircleDot" className="w-20 h-20 text-red-500 mx-auto mb-4" />
+                  <div className="text-white text-2xl font-bold">Рулетка</div>
+                </div>
+              </div>
+              <div className="absolute top-3 left-3">
+                <Badge className="bg-red-600 text-white flex items-center gap-1">
+                  <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                  LIVE
+                </Badge>
+              </div>
+              <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm flex items-center gap-2">
+                <Icon name="Users" className="w-4 h-4" />
+                124
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <Button className="gradient-purple text-white font-bold">
+                  <Icon name="Play" className="w-4 h-4 mr-2" />
+                  ИГРАТЬ
+                </Button>
+              </div>
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-white mb-1">European Roulette</h3>
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">Дилер: Anna M.</span>
+                <span className="text-green-400 font-semibold">$5 - $500</span>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="group relative bg-card border-white/10 overflow-hidden cursor-pointer hover:border-primary transition-all duration-300">
+            <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-green-900/30 to-black">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <Icon name="Spade" className="w-20 h-20 text-green-500 mx-auto mb-4" />
+                  <div className="text-white text-2xl font-bold">Блэкджек</div>
+                </div>
+              </div>
+              <div className="absolute top-3 left-3">
+                <Badge className="bg-red-600 text-white flex items-center gap-1">
+                  <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                  LIVE
+                </Badge>
+              </div>
+              <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm flex items-center gap-2">
+                <Icon name="Users" className="w-4 h-4" />
+                89
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <Button className="gradient-purple text-white font-bold">
+                  <Icon name="Play" className="w-4 h-4 mr-2" />
+                  ИГРАТЬ
+                </Button>
+              </div>
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-white mb-1">Blackjack VIP</h3>
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">Дилер: John D.</span>
+                <span className="text-green-400 font-semibold">$10 - $1000</span>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="group relative bg-card border-white/10 overflow-hidden cursor-pointer hover:border-primary transition-all duration-300">
+            <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-blue-900/30 to-black">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <Icon name="Diamond" className="w-20 h-20 text-blue-500 mx-auto mb-4" />
+                  <div className="text-white text-2xl font-bold">Покер</div>
+                </div>
+              </div>
+              <div className="absolute top-3 left-3">
+                <Badge className="bg-red-600 text-white flex items-center gap-1">
+                  <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                  LIVE
+                </Badge>
+              </div>
+              <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm flex items-center gap-2">
+                <Icon name="Users" className="w-4 h-4" />
+                67
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <Button className="gradient-purple text-white font-bold">
+                  <Icon name="Play" className="w-4 h-4 mr-2" />
+                  ИГРАТЬ
+                </Button>
+              </div>
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-white mb-1">Caribbean Poker</h3>
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">Дилер: Maria S.</span>
+                <span className="text-green-400 font-semibold">$25 - $2500</span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
       <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
         <DialogContent className="sm:max-w-md bg-[#1A1F2C] border-primary/20">
           <DialogHeader>
