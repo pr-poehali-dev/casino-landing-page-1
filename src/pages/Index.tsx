@@ -34,7 +34,7 @@ const Index = () => {
     { id: 7, title: 'Great Pigsby Megaways', provider: 'RELAX', image: 'https://cdn.poehali.dev/files/439e5a58-d63b-4168-93f1-cdba1a8f39bf.jpg' },
     { id: 8, title: 'Rich Wilde and the Tome of Madness', provider: 'PLAY\'N GO', image: 'https://cdn.poehali.dev/files/5a4cfb04-effc-44c5-b81e-c2e30e781526.jpg' },
     { id: 9, title: 'Grim the Splitter Dream Drop', provider: 'RELAX', image: 'https://cdn.poehali.dev/files/2d151925-4119-4472-90fc-c7c7380746a3.jpg' },
-    { id: 10, title: 'Rise of Zeus', provider: 'BELATRA', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
+    { id: 10, title: 'Rise of Zeus', provider: 'BELATRA', image: 'https://cdn.poehali.dev/files/64a4bff6-6cf8-4612-971b-b99e35c71aa5.jpg' },
   ];
 
   return (
