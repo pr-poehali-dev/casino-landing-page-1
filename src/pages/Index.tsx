@@ -54,10 +54,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-[#0F1419]">
-      <header className="border-b border-white/10 bg-[#1A1F2C]/80 backdrop-blur-md sticky top-0 z-50">
+      <h1 className="sr-only">Вавада Официальный Сайт 2025 - Рабочее Зеркало Казино</h1>
+      <header className="border-b border-white/10 bg-[#1A1F2C]/80 backdrop-blur-md sticky top-0 z-50" role="banner">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <div className="text-3xl font-black tracking-wide">
+            <div className="text-2xl sm:text-3xl font-black tracking-wide">
               <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">VAVADA</span>
             </div>
             <div className="hidden md:flex items-center gap-2 bg-green-600/20 border border-green-500/30 rounded-full px-4 py-2">
@@ -67,36 +68,37 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="flex items-center gap-3">
+          <nav className="flex items-center gap-2 sm:gap-3" aria-label="Основная навигация">
             <Button 
               variant="ghost" 
-              className="text-white hover:text-primary"
+              className="text-white hover:text-primary text-sm sm:text-base"
               onClick={handleRefClick}
             >
               ВОЙТИ
             </Button>
             <Button 
-              className="gradient-neon text-white font-semibold px-6 hover:opacity-90 transition-opacity"
+              className="gradient-neon text-white font-semibold px-4 sm:px-6 hover:opacity-90 transition-opacity text-sm sm:text-base"
               onClick={handleRefClick}
             >
               РЕГИСТРАЦИЯ
             </Button>
-          </div>
+          </nav>
         </div>
       </header>
 
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden" aria-label="Главный баннер">
         <div className="container mx-auto px-4 py-8">
           <div className="relative rounded-2xl overflow-hidden group cursor-pointer transform hover:scale-[1.02] transition-all duration-300">
             <img 
               src="https://cdn.poehali.dev/files/14761b0a-6f8b-4182-8cd4-bf4d15c3952d.jpg" 
-              alt="Ставки на ключевые события"
+              alt="Vavada Казино - Ставки на ключевые события 2025"
               className="w-full h-auto object-cover"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-              <Button className="gradient-neon text-white font-bold px-8 py-6 text-lg" onClick={handleRefClick}>
-                <Icon name="Zap" className="w-5 h-5 mr-2" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <Button className="gradient-neon text-white font-bold px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg" onClick={handleRefClick}>
+                <Icon name="Zap" className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 СДЕЛАТЬ СТАВКУ
               </Button>
             </div>
@@ -104,13 +106,13 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-8">
+      <section className="container mx-auto px-4 py-8" aria-label="Джекпот">
         <div className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 rounded-2xl p-8 mb-12 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20" />
           <div className="relative z-10">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h2 className="text-4xl font-black text-white mb-2 flex items-center gap-3">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-2 flex items-center gap-3">
                   <Icon name="Trophy" className="w-10 h-10" />
                   ДЖЕКПОТ
                 </h2>
@@ -118,28 +120,28 @@ const Index = () => {
               </div>
               <Icon name="Sparkles" className="w-12 h-12 text-white animate-pulse" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
-                <div className="text-yellow-100 text-sm mb-2">MEGA JACKPOT</div>
-                <div className="text-4xl font-black text-white mb-1">$1,234,567</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <article className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border-2 border-white/30">
+                <div className="text-yellow-100 text-xs sm:text-sm mb-2">MEGA JACKPOT</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-1">$1,234,567</div>
                 <div className="text-yellow-200 text-xs">+$1,234/мин</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
-                <div className="text-yellow-100 text-sm mb-2">MAJOR JACKPOT</div>
-                <div className="text-3xl font-black text-white mb-1">$123,456</div>
+              </article>
+              <article className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border-2 border-white/30">
+                <div className="text-yellow-100 text-xs sm:text-sm mb-2">MAJOR JACKPOT</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-black text-white mb-1">$123,456</div>
                 <div className="text-yellow-200 text-xs">+$234/мин</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
-                <div className="text-yellow-100 text-sm mb-2">MINI JACKPOT</div>
-                <div className="text-2xl font-black text-white mb-1">$12,345</div>
+              </article>
+              <article className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border-2 border-white/30 sm:col-span-2 md:col-span-1">
+                <div className="text-yellow-100 text-xs sm:text-sm mb-2">MINI JACKPOT</div>
+                <div className="text-xl sm:text-xl md:text-2xl font-black text-white mb-1">$12,345</div>
                 <div className="text-yellow-200 text-xs">+$45/мин</div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-purple-900/20 via-pink-900/20 to-purple-900/20 border-y border-white/10 py-4 overflow-hidden">
+      <section className="bg-gradient-to-r from-purple-900/20 via-pink-900/20 to-purple-900/20 border-y border-white/10 py-4 overflow-hidden" aria-label="Последние выигрыши">
         <div className="flex items-center gap-2 mb-2">
           <div className="container mx-auto px-4">
             <div className="flex items-center gap-2 text-yellow-400 mb-2">
@@ -232,7 +234,7 @@ const Index = () => {
 
       <section className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold text-white">Популярные игры</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">Популярные игры</h2>
           <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
             Показать все
             <Icon name="ChevronRight" className="w-4 h-4 ml-2" />
@@ -248,8 +250,9 @@ const Index = () => {
               <div className="relative aspect-[3/4] overflow-hidden bg-muted">
                 <img 
                   src={game.image} 
-                  alt={game.title}
+                  alt={`${game.title} - ${game.provider} слот`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 {game.badge && (
                   <Badge className="absolute top-2 left-2 bg-red-600 text-white animate-pulse-glow">
@@ -933,11 +936,11 @@ const Index = () => {
         </DialogContent>
       </Dialog>
 
-      <footer className="border-t border-white/10 bg-[#1A1F2C] mt-20">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <footer className="border-t border-white/10 bg-[#1A1F2C] mt-20" role="contentinfo">
+        <div className="container mx-auto px-4 py-8 sm:py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8">
             <div>
-              <div className="text-3xl font-black tracking-wide mb-4">
+              <div className="text-2xl sm:text-3xl font-black tracking-wide mb-4">
                 <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">VAVADA</span>
               </div>
               <p className="text-muted-foreground text-sm mb-4">
@@ -949,7 +952,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div>
+            <nav aria-label="Игры">
               <h3 className="text-white font-bold mb-4">Игры</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="hover:text-primary cursor-pointer transition-colors">Слоты</li>
@@ -958,9 +961,9 @@ const Index = () => {
                 <li className="hover:text-primary cursor-pointer transition-colors">Блэкджек</li>
                 <li className="hover:text-primary cursor-pointer transition-colors">Покер</li>
               </ul>
-            </div>
+            </nav>
 
-            <div>
+            <nav aria-label="Информация">
               <h3 className="text-white font-bold mb-4">Информация</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="hover:text-primary cursor-pointer transition-colors">О нас</li>
@@ -969,7 +972,7 @@ const Index = () => {
                 <li className="hover:text-primary cursor-pointer transition-colors">Конфиденциальность</li>
                 <li className="hover:text-primary cursor-pointer transition-colors">Поддержка</li>
               </ul>
-            </div>
+            </nav>
 
             <div>
               <h3 className="text-white font-bold mb-4">Способы оплаты</h3>
