@@ -79,4 +79,17 @@
       0 0 10px rgba(155, 135, 245, 0.8),
       0 0 20px rgba(255, 107, 107, 0.5);
   }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll-left 30s linear infinite;
+  }
 }

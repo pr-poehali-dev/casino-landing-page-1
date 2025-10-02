@@ -137,6 +137,97 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="bg-gradient-to-r from-purple-900/20 via-pink-900/20 to-purple-900/20 border-y border-white/10 py-4 overflow-hidden">
+        <div className="flex items-center gap-2 mb-2">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center gap-2 text-yellow-400 mb-2">
+              <Icon name="TrendingUp" className="w-5 h-5" />
+              <span className="font-bold text-sm">ПОСЛЕДНИЕ ВЫИГРЫШИ</span>
+            </div>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="flex gap-6 animate-scroll">
+            <div className="flex gap-6 min-w-max">
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Alex**</span>
+                <span className="text-green-400 font-bold text-sm">+$1,250</span>
+                <span className="text-white/50 text-xs">Sugar Rush</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Maria**</span>
+                <span className="text-green-400 font-bold text-sm">+$3,840</span>
+                <span className="text-white/50 text-xs">Gates of Olympus</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">John**</span>
+                <span className="text-green-400 font-bold text-sm">+$890</span>
+                <span className="text-white/50 text-xs">Dog House</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Serg**</span>
+                <span className="text-green-400 font-bold text-sm">+$5,670</span>
+                <span className="text-white/50 text-xs">Zeus vs Hades</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Anna**</span>
+                <span className="text-green-400 font-bold text-sm">+$2,340</span>
+                <span className="text-white/50 text-xs">Sweet Bonanza</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Mike**</span>
+                <span className="text-green-400 font-bold text-sm">+$7,890</span>
+                <span className="text-white/50 text-xs">Mega Fortune</span>
+              </div>
+            </div>
+            <div className="flex gap-6 min-w-max">
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Alex**</span>
+                <span className="text-green-400 font-bold text-sm">+$1,250</span>
+                <span className="text-white/50 text-xs">Sugar Rush</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Maria**</span>
+                <span className="text-green-400 font-bold text-sm">+$3,840</span>
+                <span className="text-white/50 text-xs">Gates of Olympus</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">John**</span>
+                <span className="text-green-400 font-bold text-sm">+$890</span>
+                <span className="text-white/50 text-xs">Dog House</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Serg**</span>
+                <span className="text-green-400 font-bold text-sm">+$5,670</span>
+                <span className="text-white/50 text-xs">Zeus vs Hades</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Anna**</span>
+                <span className="text-green-400 font-bold text-sm">+$2,340</span>
+                <span className="text-white/50 text-xs">Sweet Bonanza</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+                <Icon name="User" className="w-4 h-4 text-primary" />
+                <span className="text-white/80 text-sm">Mike**</span>
+                <span className="text-green-400 font-bold text-sm">+$7,890</span>
+                <span className="text-white/50 text-xs">Mega Fortune</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold text-white">Популярные игры</h2>
