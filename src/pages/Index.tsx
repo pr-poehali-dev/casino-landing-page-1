@@ -28,16 +28,16 @@ const Index = () => {
   ];
 
   const games: GameCard[] = [
-    { id: 1, title: 'Sugar rush 1000', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg', badge: 'NEW' },
-    { id: 2, title: 'Gates of Olympus 1000', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 3, title: 'The Dog House Megaways', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 4, title: 'Zeus vs Hades – Gods of War', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 5, title: 'Sweet Bonanza 1000', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 6, title: 'Le Bandit', provider: 'HACKSAW', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 7, title: 'Great Pigsby Megaways', provider: 'RELAX', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 8, title: 'Rich Wilde and the Tome of Madness', provider: 'PLAY\'N GO', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 9, title: 'Grim the Splitter Dream Drop', provider: 'RELAX', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
-    { id: 10, title: 'Rise of Zeus', provider: 'BELATRA', image: 'https://cdn.poehali.dev/files/1b5f5ca9-6d3c-4082-a2fd-1e7263fef488.jpg' },
+    { id: 1, title: 'Sugar rush 1000', provider: 'PRAGMATIC PLAY', image: '/img/653ea9c0-b444-40ca-9c43-3c557c43b042.jpg', badge: 'NEW' },
+    { id: 2, title: 'Gates of Olympus 1000', provider: 'PRAGMATIC PLAY', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
+    { id: 3, title: 'The Dog House Megaways', provider: 'PRAGMATIC PLAY', image: '/img/58eba794-f91d-489f-8eec-4cea1bf81c4e.jpg' },
+    { id: 4, title: 'Zeus vs Hades – Gods of War', provider: 'PRAGMATIC PLAY', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
+    { id: 5, title: 'Sweet Bonanza 1000', provider: 'PRAGMATIC PLAY', image: '/img/653ea9c0-b444-40ca-9c43-3c557c43b042.jpg' },
+    { id: 6, title: 'Le Bandit', provider: 'HACKSAW', image: '/img/58eba794-f91d-489f-8eec-4cea1bf81c4e.jpg' },
+    { id: 7, title: 'Great Pigsby Megaways', provider: 'RELAX', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
+    { id: 8, title: 'Rich Wilde and the Tome of Madness', provider: 'PLAY\'N GO', image: '/img/653ea9c0-b444-40ca-9c43-3c557c43b042.jpg' },
+    { id: 9, title: 'Grim the Splitter Dream Drop', provider: 'RELAX', image: '/img/58eba794-f91d-489f-8eec-4cea1bf81c4e.jpg' },
+    { id: 10, title: 'Rise of Zeus', provider: 'BELATRA', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
   ];
 
   return (
@@ -113,9 +113,11 @@ const Index = () => {
               className="group relative bg-card border-white/10 overflow-hidden cursor-pointer hover:border-primary transition-all duration-300 transform hover:scale-105"
             >
               <div className="relative aspect-[3/4] overflow-hidden bg-muted">
-                <div className="w-full h-full bg-gradient-to-br from-purple-600/30 to-pink-600/30 flex items-center justify-center">
-                  <Icon name="Sparkles" className="w-16 h-16 text-white/40" />
-                </div>
+                <img 
+                  src={game.image} 
+                  alt={game.title}
+                  className="w-full h-full object-cover"
+                />
                 {game.badge && (
                   <Badge className="absolute top-2 left-2 bg-red-600 text-white">
                     {game.badge}
