@@ -938,7 +938,7 @@ const Index = () => {
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                <span>© 2024 VAVADA Casino</span>
+                <span>© 2025 VAVADA Casino</span>
                 <span className="hidden md:inline">•</span>
                 <span>Все права защищены</span>
               </div>
