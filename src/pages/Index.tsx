@@ -42,8 +42,8 @@ const Index = () => {
       <header className="border-b border-white/10 bg-[#1A1F2C]/80 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <div className="text-3xl font-black">
-              <span className="gradient-neon bg-clip-text text-transparent">VAVADA</span>
+            <div className="text-3xl font-black tracking-wide">
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">VAVADA</span>
             </div>
             <div className="hidden md:flex items-center gap-2 bg-green-600/20 border border-green-500/30 rounded-full px-4 py-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
