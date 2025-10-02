@@ -999,6 +999,28 @@ const Index = () => {
             </div>
           </div>
 
+          <article className="border-t border-white/10 pt-8 pb-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">Vavada Казино — Официальный Сайт и Рабочее Зеркало 2025</h2>
+            <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+              <p>
+                <strong className="text-white">Vavada</strong> (Вавада) — это надежное онлайн казино с международной лицензией, предлагающее широкий выбор азартных игр. 
+                Официальный сайт <strong className="text-white">Vavada Casino</strong> работает круглосуточно и доступен через актуальное рабочее зеркало на сегодня.
+              </p>
+              <p>
+                В нашем каталоге представлены популярные слоты от ведущих провайдеров: <strong className="text-white">Pragmatic Play, Hacksaw Gaming, Relax Gaming, Play'n GO</strong>. 
+                Играйте в топовые игры — <em>Sugar Rush 1000, Gates of Olympus, Sweet Bonanza, Zeus vs Hades</em> и сотни других слотов с высоким RTP.
+              </p>
+              <p>
+                <strong className="text-white">Преимущества Vavada:</strong> быстрые выплаты за 15 минут, приветственный бонус до 30000₽, промокоды для новых игроков, 
+                программа лояльности с кэшбэком, круглосуточная поддержка на русском языке. Все транзакции защищены SSL-шифрованием.
+              </p>
+              <p>
+                Рабочее зеркало <strong className="text-white">Vavada</strong> обеспечивает стабильный доступ к казино из любой точки мира. 
+                Мобильная версия сайта адаптирована для iOS и Android устройств — играйте где угодно и когда угодно.
+              </p>
+            </div>
+          </article>
+
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-4 text-xs text-muted-foreground">
