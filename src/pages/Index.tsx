@@ -480,9 +480,90 @@ const Index = () => {
         </DialogContent>
       </Dialog>
 
-      <footer className="border-t border-white/10 py-8 mt-20">
-        <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>© 2024 VAVADA Casino. Играйте ответственно. 18+</p>
+      <footer className="border-t border-white/10 bg-[#1A1F2C] mt-20">
+        <div className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="text-3xl font-black mb-4">
+                <span className="gradient-neon bg-clip-text text-transparent">VAVADA</span>
+              </div>
+              <p className="text-muted-foreground text-sm mb-4">
+                Онлайн казино с лицензией Кюрасао. Играйте безопасно и выигрывайте!
+              </p>
+              <div className="flex items-center gap-2 text-sm">
+                <Icon name="Award" className="w-5 h-5 text-yellow-500" />
+                <span className="text-white font-semibold">Лицензия Кюрасао</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-white font-bold mb-4">Игры</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="hover:text-primary cursor-pointer transition-colors">Слоты</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Живые дилеры</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Рулетка</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Блэкджек</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Покер</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-white font-bold mb-4">Информация</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="hover:text-primary cursor-pointer transition-colors">О нас</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Правила</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Ответственная игра</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Конфиденциальность</li>
+                <li className="hover:text-primary cursor-pointer transition-colors">Поддержка</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-white font-bold mb-4">Способы оплаты</h3>
+              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-white/10 rounded-lg p-2 flex items-center justify-center border border-white/20">
+                  <Icon name="CreditCard" className="w-6 h-6 text-white" />
+                </div>
+                <div className="bg-white/10 rounded-lg p-2 flex items-center justify-center border border-white/20">
+                  <Icon name="Wallet" className="w-6 h-6 text-white" />
+                </div>
+                <div className="bg-white/10 rounded-lg p-2 flex items-center justify-center border border-white/20">
+                  <Icon name="Smartphone" className="w-6 h-6 text-white" />
+                </div>
+                <div className="bg-white/10 rounded-lg p-2 flex items-center justify-center border border-white/20">
+                  <Icon name="Bitcoin" className="w-6 h-6 text-yellow-500" />
+                </div>
+                <div className="bg-white/10 rounded-lg p-2 flex items-center justify-center border border-white/20">
+                  <Icon name="Banknote" className="w-6 h-6 text-white" />
+                </div>
+                <div className="bg-white/10 rounded-lg p-2 flex items-center justify-center border border-white/20">
+                  <Icon name="QrCode" className="w-6 h-6 text-white" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 pt-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                <span>© 2024 VAVADA Casino</span>
+                <span className="hidden md:inline">•</span>
+                <span>Все права защищены</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Badge className="bg-green-600/20 text-green-400 border border-green-600/30">
+                  <Icon name="Shield" className="w-3 h-3 mr-1" />
+                  SSL защита
+                </Badge>
+                <Badge className="bg-blue-600/20 text-blue-400 border border-blue-600/30">
+                  18+
+                </Badge>
+              </div>
+            </div>
+            <p className="text-center text-xs text-muted-foreground mt-4">
+              Играйте ответственно. Азартные игры могут вызывать зависимость.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
