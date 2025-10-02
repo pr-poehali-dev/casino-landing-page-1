@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
@@ -18,7 +18,22 @@ interface GameCard {
 const Index = () => {
   const [loginOpen, setLoginOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
+  const [disclaimerOpen, setDisclaimerOpen] = useState(false);
   const refLink = 'https://infowawada.com/?promo=0e4cb864-e734-44ef-9820-29068cfbffac&target=register';
+
+  useEffect(() => {
+    const isDesktop = window.innerWidth >= 1024;
+    const hasSeenDisclaimer = localStorage.getItem('vavada_disclaimer_seen');
+    
+    if (isDesktop && !hasSeenDisclaimer) {
+      setDisclaimerOpen(true);
+    }
+  }, []);
+
+  const handleDisclaimerAccept = () => {
+    localStorage.setItem('vavada_disclaimer_seen', 'true');
+    setDisclaimerOpen(false);
+  };
 
   const handleRefClick = () => {
     window.open(refLink, '_blank', 'noopener,noreferrer');
@@ -868,6 +883,52 @@ const Index = () => {
                 Войти
               </button>
             </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={disclaimerOpen} onOpenChange={() => {}}>
+        <DialogContent className="sm:max-w-2xl bg-[#1A1F2C] border-yellow-500/50" hideClose>
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-center text-yellow-500 flex items-center justify-center gap-3">
+              <Icon name="AlertTriangle" className="w-8 h-8" />
+              ВАЖНОЕ УВЕДОМЛЕНИЕ
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-6 py-6">
+            <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
+              <p className="text-white text-lg leading-relaxed mb-4">
+                ⚠️ <strong>Внимание!</strong> Данный сайт носит исключительно <strong>информационно-ознакомительный характер</strong>.
+              </p>
+              <ul className="space-y-3 text-white/90">
+                <li className="flex items-start gap-2">
+                  <Icon name="XCircle" className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                  <span>Мы <strong>не призываем</strong> к участию в азартных играх</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="XCircle" className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                  <span>На нашем сайте <strong>невозможно играть</strong> на реальные деньги</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="XCircle" className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                  <span>Сайт <strong>не принимает платежи</strong> и финансовые операции</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="Info" className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <span>Вся информация предоставлена только для ознакомления</span>
+                </li>
+              </ul>
+            </div>
+            <p className="text-muted-foreground text-sm text-center">
+              Азартные игры могут вызывать зависимость. Играйте ответственно. 18+
+            </p>
+            <Button 
+              className="w-full gradient-neon text-white font-bold py-6 text-lg hover:opacity-90"
+              onClick={handleDisclaimerAccept}
+            >
+              <Icon name="Check" className="w-5 h-5 mr-2" />
+              Я ПОНИМАЮ И ПРИНИМАЮ
+            </Button>
           </div>
         </DialogContent>
       </Dialog>
