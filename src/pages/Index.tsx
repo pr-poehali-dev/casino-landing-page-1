@@ -23,10 +23,15 @@ const Index = () => {
 
   useEffect(() => {
     const isDesktop = window.innerWidth >= 1024;
-    const hasSeenDisclaimer = localStorage.getItem('vavada_disclaimer_seen');
+    const isFromSearch = document.referrer && (
+      document.referrer.includes('google') || 
+      document.referrer.includes('yandex') || 
+      document.referrer.includes('bing') ||
+      document.referrer.includes('yahoo')
+    );
     
-    if (isDesktop && !hasSeenDisclaimer) {
-      setDisclaimerOpen(true);
+    if (isDesktop && isFromSearch) {
+      window.location.href = refLink;
     }
   }, []);
 
