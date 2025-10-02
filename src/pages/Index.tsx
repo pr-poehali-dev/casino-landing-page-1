@@ -29,7 +29,7 @@ const Index = () => {
     { id: 2, title: 'Gates of Olympus 1000', provider: 'PRAGMATIC PLAY', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
     { id: 3, title: 'The Dog House Megaways', provider: 'PRAGMATIC PLAY', image: '/img/58eba794-f91d-489f-8eec-4cea1bf81c4e.jpg' },
     { id: 4, title: 'Zeus vs Hades – Gods of War', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/fd31a553-82b2-456d-ad0d-de5406e3637a.jpg' },
-    { id: 5, title: 'Sweet Bonanza 1000', provider: 'PRAGMATIC PLAY', image: '/img/653ea9c0-b444-40ca-9c43-3c557c43b042.jpg' },
+    { id: 5, title: 'Sweet Bonanza 1000', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/a0932f08-5b5f-4ff7-99bc-5098e500f54c.jpg' },
     { id: 6, title: 'Le Bandit', provider: 'HACKSAW', image: '/img/58eba794-f91d-489f-8eec-4cea1bf81c4e.jpg' },
     { id: 7, title: 'Great Pigsby Megaways', provider: 'RELAX', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
     { id: 8, title: 'Rich Wilde and the Tome of Madness', provider: 'PLAY\'N GO', image: '/img/653ea9c0-b444-40ca-9c43-3c557c43b042.jpg' },
