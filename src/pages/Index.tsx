@@ -28,7 +28,7 @@ const Index = () => {
   ];
 
   const games: GameCard[] = [
-    { id: 1, title: 'Sugar rush 1000', provider: 'PRAGMATIC PLAY', image: '/img/653ea9c0-b444-40ca-9c43-3c557c43b042.jpg', badge: 'NEW' },
+    { id: 1, title: 'Sugar rush 1000', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/ff4dd00e-8ef2-4b4a-96b6-c2c1449df14b.jpg', badge: 'NEW' },
     { id: 2, title: 'Gates of Olympus 1000', provider: 'PRAGMATIC PLAY', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
     { id: 3, title: 'The Dog House Megaways', provider: 'PRAGMATIC PLAY', image: '/img/58eba794-f91d-489f-8eec-4cea1bf81c4e.jpg' },
     { id: 4, title: 'Zeus vs Hades – Gods of War', provider: 'PRAGMATIC PLAY', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
