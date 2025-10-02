@@ -97,6 +97,41 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 py-8">
+        <div className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 rounded-2xl p-8 mb-12 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20" />
+          <div className="relative z-10">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h2 className="text-4xl font-black text-white mb-2 flex items-center gap-3">
+                  <Icon name="Trophy" className="w-10 h-10" />
+                  ДЖЕКПОТ
+                </h2>
+                <p className="text-yellow-100 text-sm">Розыгрыш каждый час!</p>
+              </div>
+              <Icon name="Sparkles" className="w-12 h-12 text-white animate-pulse" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
+                <div className="text-yellow-100 text-sm mb-2">MEGA JACKPOT</div>
+                <div className="text-4xl font-black text-white mb-1">$1,234,567</div>
+                <div className="text-yellow-200 text-xs">+$1,234/мин</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
+                <div className="text-yellow-100 text-sm mb-2">MAJOR JACKPOT</div>
+                <div className="text-3xl font-black text-white mb-1">$123,456</div>
+                <div className="text-yellow-200 text-xs">+$234/мин</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
+                <div className="text-yellow-100 text-sm mb-2">MINI JACKPOT</div>
+                <div className="text-2xl font-black text-white mb-1">$12,345</div>
+                <div className="text-yellow-200 text-xs">+$45/мин</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold text-white">Популярные игры</h2>
@@ -119,7 +154,7 @@ const Index = () => {
                   className="w-full h-full object-cover"
                 />
                 {game.badge && (
-                  <Badge className="absolute top-2 left-2 bg-red-600 text-white">
+                  <Badge className="absolute top-2 left-2 bg-red-600 text-white animate-pulse-glow">
                     {game.badge}
                   </Badge>
                 )}
