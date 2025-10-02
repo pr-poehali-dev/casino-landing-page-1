@@ -19,14 +19,6 @@ const Index = () => {
   const [loginOpen, setLoginOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
 
-  const winners = [
-    { multiplier: '×100', gradient: 'from-purple-600 to-purple-400' },
-    { multiplier: '×560', gradient: 'from-blue-600 to-blue-400' },
-    { multiplier: '×1780', gradient: 'from-green-600 to-green-400' },
-    { multiplier: '×9560', gradient: 'from-orange-600 to-orange-400' },
-    { multiplier: '×13550', gradient: 'from-red-600 to-red-400' },
-  ];
-
   const games: GameCard[] = [
     { id: 1, title: 'Sugar rush 1000', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/ff4dd00e-8ef2-4b4a-96b6-c2c1449df14b.jpg', badge: 'NEW' },
     { id: 2, title: 'Gates of Olympus 1000', provider: 'PRAGMATIC PLAY', image: '/img/86d0b0ed-44f1-41f0-8ec8-1db060affac6.jpg' },
@@ -73,31 +65,21 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="relative py-12 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-transparent" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="flex items-center justify-center gap-4 overflow-x-auto pb-4">
-            {winners.map((winner, idx) => (
-              <div 
-                key={idx}
-                className={`relative min-w-[200px] h-[240px] rounded-xl bg-gradient-to-br ${winner.gradient} p-6 flex flex-col items-center justify-center transform hover:scale-105 transition-transform cursor-pointer`}
-              >
-                <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
-                  <Icon name="Trophy" className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-white/20 mx-auto mb-4 flex items-center justify-center">
-                    <Icon name="User" className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="text-4xl font-black text-white mb-2 text-glow">
-                    {winner.multiplier}
-                  </div>
-                  <Badge className="bg-yellow-500 text-black hover:bg-yellow-400">
-                    WINNER
-                  </Badge>
-                </div>
-              </div>
-            ))}
+      <section className="relative overflow-hidden">
+        <div className="container mx-auto px-4 py-8">
+          <div className="relative rounded-2xl overflow-hidden group cursor-pointer transform hover:scale-[1.02] transition-all duration-300">
+            <img 
+              src="https://cdn.poehali.dev/files/14761b0a-6f8b-4182-8cd4-bf4d15c3952d.jpg" 
+              alt="Ставки на ключевые события"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <Button className="gradient-neon text-white font-bold px-8 py-6 text-lg">
+                <Icon name="Zap" className="w-5 h-5 mr-2" />
+                СДЕЛАТЬ СТАВКУ
+              </Button>
+            </div>
           </div>
         </div>
       </section>
