@@ -876,8 +876,8 @@ const Index = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-3xl font-black mb-4">
-                <span className="gradient-neon bg-clip-text text-transparent">VAVADA</span>
+              <div className="text-3xl font-black tracking-wide mb-4">
+                <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">VAVADA</span>
               </div>
               <p className="text-muted-foreground text-sm mb-4">
                 Онлайн казино с лицензией Кюрасао. Играйте безопасно и выигрывайте!
