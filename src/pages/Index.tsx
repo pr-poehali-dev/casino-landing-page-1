@@ -18,6 +18,11 @@ interface GameCard {
 const Index = () => {
   const [loginOpen, setLoginOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
+  const refLink = 'https://infowawada.com/?promo=0e4cb864-e734-44ef-9820-29068cfbffac&target=register';
+
+  const handleRefClick = () => {
+    window.open(refLink, '_blank', 'noopener,noreferrer');
+  };
 
   const games: GameCard[] = [
     { id: 1, title: 'Sugar rush 1000', provider: 'PRAGMATIC PLAY', image: 'https://cdn.poehali.dev/files/ff4dd00e-8ef2-4b4a-96b6-c2c1449df14b.jpg', badge: 'NEW' },
@@ -51,13 +56,13 @@ const Index = () => {
             <Button 
               variant="ghost" 
               className="text-white hover:text-primary"
-              onClick={() => setLoginOpen(true)}
+              onClick={handleRefClick}
             >
               ВОЙТИ
             </Button>
             <Button 
               className="gradient-neon text-white font-semibold px-6 hover:opacity-90 transition-opacity"
-              onClick={() => setRegisterOpen(true)}
+              onClick={handleRefClick}
             >
               РЕГИСТРАЦИЯ
             </Button>
@@ -75,7 +80,7 @@ const Index = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-              <Button className="gradient-neon text-white font-bold px-8 py-6 text-lg">
+              <Button className="gradient-neon text-white font-bold px-8 py-6 text-lg" onClick={handleRefClick}>
                 <Icon name="Zap" className="w-5 h-5 mr-2" />
                 СДЕЛАТЬ СТАВКУ
               </Button>
@@ -240,7 +245,7 @@ const Index = () => {
                   {game.provider}
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Button className="gradient-purple text-white font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                  <Button className="gradient-purple text-white font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform" onClick={handleRefClick}>
                     <Icon name="Play" className="w-4 h-4 mr-2" />
                     ИГРАТЬ
                   </Button>
@@ -288,7 +293,7 @@ const Index = () => {
                 124
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Button className="gradient-purple text-white font-bold">
+                <Button className="gradient-purple text-white font-bold" onClick={handleRefClick}>
                   <Icon name="Play" className="w-4 h-4 mr-2" />
                   ИГРАТЬ
                 </Button>
@@ -322,7 +327,7 @@ const Index = () => {
                 89
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Button className="gradient-purple text-white font-bold">
+                <Button className="gradient-purple text-white font-bold" onClick={handleRefClick}>
                   <Icon name="Play" className="w-4 h-4 mr-2" />
                   ИГРАТЬ
                 </Button>
@@ -356,7 +361,7 @@ const Index = () => {
                 67
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Button className="gradient-purple text-white font-bold">
+                <Button className="gradient-purple text-white font-bold" onClick={handleRefClick}>
                   <Icon name="Play" className="w-4 h-4 mr-2" />
                   ИГРАТЬ
                 </Button>
@@ -758,7 +763,7 @@ const Index = () => {
             <p className="text-gray-300 mb-6">
               Перейдите на официальный сайт Vavada или его актуальное зеркало и получите свой приветственный бонус уже сегодня!
             </p>
-            <Button className="gradient-neon text-white font-bold px-12 py-6 text-lg" onClick={() => setRegisterOpen(true)}>
+            <Button className="gradient-neon text-white font-bold px-12 py-6 text-lg" onClick={handleRefClick}>
               <Icon name="Rocket" className="w-6 h-6 mr-2" />
               НАЧАТЬ ИГРАТЬ
             </Button>
@@ -795,17 +800,14 @@ const Index = () => {
                 className="bg-muted border-white/10 text-white placeholder:text-white/40"
               />
             </div>
-            <Button className="w-full gradient-neon text-white font-bold py-6 hover:opacity-90">
+            <Button className="w-full gradient-neon text-white font-bold py-6 hover:opacity-90" onClick={handleRefClick}>
               <Icon name="LogIn" className="w-5 h-5 mr-2" />
               ВОЙТИ
             </Button>
             <div className="text-center text-sm text-muted-foreground">
               Нет аккаунта?{' '}
               <button 
-                onClick={() => {
-                  setLoginOpen(false);
-                  setRegisterOpen(true);
-                }}
+                onClick={handleRefClick}
                 className="text-primary hover:underline font-semibold"
               >
                 Зарегистрироваться
@@ -853,17 +855,14 @@ const Index = () => {
                 className="bg-muted border-white/10 text-white placeholder:text-white/40"
               />
             </div>
-            <Button className="w-full gradient-neon text-white font-bold py-6 hover:opacity-90">
+            <Button className="w-full gradient-neon text-white font-bold py-6 hover:opacity-90" onClick={handleRefClick}>
               <Icon name="UserPlus" className="w-5 h-5 mr-2" />
               ЗАРЕГИСТРИРОВАТЬСЯ
             </Button>
             <div className="text-center text-sm text-muted-foreground">
               Уже есть аккаунт?{' '}
               <button 
-                onClick={() => {
-                  setRegisterOpen(false);
-                  setLoginOpen(true);
-                }}
+                onClick={handleRefClick}
                 className="text-primary hover:underline font-semibold"
               >
                 Войти
